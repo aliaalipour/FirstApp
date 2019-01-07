@@ -56,90 +56,122 @@ namespace FirstApp
             #region 5
 
 
-            int num1, num2;
-            num1 = Convert.ToInt32(Console.ReadLine());
-            num2 = Convert.ToInt32(Console.ReadLine());
+            //int num1, num2;
+            //num1 = Convert.ToInt32(Console.ReadLine());
+            //num2 = Convert.ToInt32(Console.ReadLine());
 
-            int sum = num1 + num2;
-            int min = num1 - num2;
-            int div = num1 / num2;
-            int mul = num1 * num2;
+            //int sum = num1 + num2;
+            //int min = num1 - num2;
+            //int div = num1 / num2;
+            //int mul = num1 * num2;
 
-            Console.WriteLine("The Sum is: " + sum);
-            Console.WriteLine("The minus is: " + min);
-            Console.WriteLine("The Divided is: " + div);
-            Console.WriteLine("The mul is: " + mul);
+            //Console.WriteLine("The Sum is: " + sum);
+            //Console.WriteLine("The minus is: " + min);
+            //Console.WriteLine("The Divided is: " + div);
+            //Console.WriteLine("The mul is: " + mul);
 
             #endregion
 
-
-
             #region جلسه چهارم
 
-            int i = 5;
+            //int x = 10;
 
             #region if
 
 
-
-            if (i == 10)
-            {
-                Console.WriteLine("i is 10");
-            }
+            //if (x == 10)
+            //{
+            //    Console.WriteLine("i is 10");
+            //}
 
             #endregion
 
 
             #region if-else
 
-            if (i == 10)
-            {
-                Console.WriteLine("i is 10");
-            }
-            else
-            {
-                Console.WriteLine("i is not 10");
-            }
+            //if (x == 10)
+            //{
+            //    Console.WriteLine("i is 10");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("i is not 10");
+            //}
 
             #endregion
 
 
             #region switch
-            switch (i)
-            {
-                case 1:
-                    Console.WriteLine("i is 1");
-                    break;
-                case 2:
-                    Console.WriteLine("i is 2");
-                    break;
-                case 3:
-                    Console.WriteLine("i is 3");
-                    break;
-                case 5:
-                    Console.WriteLine("i is 5");
-                    break;
-                default:
-                    Console.WriteLine("Default number apear");
-                    break;
-            }
+            //switch (x)
+            //{
+            //    case 1:
+            //        Console.WriteLine("i is 1");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("i is 2");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("i is 3");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("i is 5");
+            //        break;
+            //    case 10:
+            //        Console.WriteLine("i is 10");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Default number apear");
+            //        break;
+            //}
             #endregion
 
 
             #region Ternary operator
 
             int x = 10;
-            int y = 5;
+            int y = 15;
 
-            var result = x > y ? "x is greater than y" : 
+            string result = x > y ? "x is greater than y" :
                 "x is less than or equal to y";
 
-
+            //Console.WriteLine(result);
 
             #endregion
 
-            Console.ReadLine();
 
+            //Console.ReadLine();
+
+            #endregion
+
+            #region جلسه 5 و 6 
+
+            int[] arr = new int[10];
+
+            //string[] arr2 = new string[10];
+
+            arr[0] = 55;
+            arr[5] = 66;
+
+            //arr2[0] = "ali";
+            //arr2[1] = "hosein";
+
+
+
+            //Console.WriteLine(arr2[2]);
+
+
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    Console.WriteLine("Value is {0}", arr[i]);
+            //}
+
+            foreach (int item in arr)
+            {
+                Console.WriteLine("Value is {0}", item);
+            }
+
+
+            Console.ReadLine();
             #endregion
         }
     }
