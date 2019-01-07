@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -145,12 +146,12 @@ namespace FirstApp
 
             #region جلسه 5 و 6 
 
-            int[] arr = new int[10];
+            //int[] arr = new int[10];
 
             //string[] arr2 = new string[10];
 
-            arr[0] = 55;
-            arr[5] = 66;
+            //arr[0] = 55;
+            //arr[5] = 66;
 
             //arr2[0] = "ali";
             //arr2[1] = "hosein";
@@ -165,13 +166,45 @@ namespace FirstApp
             //    Console.WriteLine("Value is {0}", arr[i]);
             //}
 
-            foreach (int item in arr)
+            //foreach (int item in arr)
+            //{
+            //    Console.WriteLine("Value is {0}", item);
+            //}
+
+            #endregion
+
+            #region جلسه 7
+
+            int num1 = 0;
+            int num2 = 0;
+
+
+            try
             {
-                Console.WriteLine("Value is {0}", item);
+                Console.WriteLine("Please Enter Number1 : ");
+                num1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Please Enter Number2 : ");
+                num2 = Convert.ToInt32(Console.ReadLine());
+
+                num2 = num1 / 0;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
 
+            finally
+            {
+                Console.WriteLine("finally Apear");
+            }
+
+            Console.WriteLine("Sum is: " + (num1 + num2));
+
+        
 
             Console.ReadLine();
+
             #endregion
         }
     }
